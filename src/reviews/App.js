@@ -9,20 +9,24 @@ const App = () => {
 
     const nextReview = () => {
         setIndex(index += 1)
-        if(index > data.length - 1) {
+        if (index > data.length - 1) {
             setIndex(0)
         }
     }
 
     const prevReview = () => {
         setIndex(index -= 1)
-        if(index === -1) {
+        if (index === -1) {
             setIndex(data.length - 1)
         }
     }
     return (
         <div className="App">
-            {data.map((rev, i) => i === index ? <Review key={rev.id} {...rev} next={nextReview} prev={prevReview} /> : '')}
+            <h1 className="title">Reviews</h1>
+
+            <div className="container">
+                {data.map((rev, i) => i === index ? <Review key={rev.id} {...rev} next={nextReview} prev={prevReview} /> : '')}
+            </div>
         </div>
     )
 }

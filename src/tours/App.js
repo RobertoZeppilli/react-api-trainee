@@ -27,7 +27,10 @@ function App() {
   }
   return (
     <div className="App">
-      {loading ? <Loader /> : tours.map(tour => <Tour key={tour.id} {...tour} remove={remove} />)}
+      <h1 className="title">Our Tours</h1>
+      <section className="section">
+        {loading ? <Loader /> : tours.map(tour => <Tour key={tour.id} {...tour} remove={remove} />)}
+      </section>
     </div>
   );
 }

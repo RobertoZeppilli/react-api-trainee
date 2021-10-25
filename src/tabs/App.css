@@ -4,11 +4,97 @@
   box-sizing: border-box;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
+body {
+  background-color: rgb(211, 228, 241);
+}
 .App {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 3.75rem 0;
+}
+
+.title {position: relative;}
+.title::after {
+  content: '';
+  position:absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: .35rem;
+  width: 60%; 
+  background-color: rgb(108, 189, 108);
+}
+
+.container {
+  width: 900px;
+  margin: 5rem auto;
+  display: flex;
+}
+.companies {
+  width: 20%;
+  padding: 0 2.25rem;
+}
+.companies .company {
+  margin-bottom: 1.95rem;
+  border: none;
+  background: none;
+  outline: none;
+  color: rgb(108, 189, 108);
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  width: max-content;
+  font-size: 1.15rem;
+}
+.job {
+  width: 80%;
+  padding: 0 2.55rem;
+}
+
+.badge {
+  background-color: rgb(179, 197, 212);
+  padding: .45rem .65rem;
+  color: rgb(70, 86, 122);
+  font-weight: bold;
+  width: max-content;
+  margin: .55rem 0;
+  border-radius: .25rem;
+}
+
+.dates {
+  color: rgb(70, 86, 122);
+  font-size: 1.15rem;
+}
+.duties {
+  margin-top: 1.75rem;
+}
+.duty {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.15rem;
+}
+.duty-text {
+  font-size: .85rem;
+  padding: 0 .75rem;
+}
+
+.arrow {
+  font-size: 40px;
+  color: rgb(108, 189, 108);
+}
+
+.active {
+  border-left: 2px solid rgb(108, 189, 108) !important;
+  padding: 0;
+  animation-name: show;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes show {
+  100% {padding: 0 .75rem;}
 }

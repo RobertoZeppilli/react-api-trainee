@@ -4,9 +4,9 @@ import './App.css';
 const App = () => {
     return (
         <div className="App">
-            <h1 className="title">Project</h1>
+            <h1 className="title">Grocery Bud Project</h1>
             <div className="container">
-                content
+                
             </div>
         </div>
     )

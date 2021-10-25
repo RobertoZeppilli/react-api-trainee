@@ -8,7 +8,8 @@ const App = () => {
 
     return (
         <div className="App">
-            <Container questions={questions}/>
+            <h1 className="title">Q &amp; A</h1>
+            <Container className="data" questions={questions}/>
         </div>
     )
 }

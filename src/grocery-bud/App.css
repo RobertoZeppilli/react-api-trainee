@@ -22,7 +22,7 @@
   transform: translateX(-50%);
   height: .35rem;
   width: 60%; 
-  background-color: rgb(184, 153, 18);
+  background-color: hsl(16, 76%, 72%);
 }
 
 .container {

@@ -4,13 +4,13 @@ const Tour = ({ id, name, info, image, price, remove }) => {
     const [show, setShow] = useState(false)
     return (
         <div className="tour">
-            <picture>
+            <div className="img">
                 <img src={image} alt={name} />
-            </picture>
+            </div>
             <section className="info">
                 <div className="details">
                     <h2>{name}</h2>
-                    <h5 className="price">{price}</h5>
+                    <h5 className="price">${price}</h5>
                 </div>
                 <div className="description">
                     <p>{show ? info : `${info.substr(0, 200)}...`}</p>

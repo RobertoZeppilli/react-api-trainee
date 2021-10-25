@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3.75rem 0;
+}
+
+.title {position: relative;}
+.title::after {
+  content: '';
+  position:absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: .35rem;
+  width: 60%; 
+  background-color: yellow;
+}
+
+.container {
+  width: 1200px;
+  margin: 3rem auto;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  width: 400px;
+  margin: 3rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form input {
+  margin: 0 .85rem;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(79, 130, 241);
+  border: 1px solid rgb(79, 130, 241);
+  padding: .55rem .75rem;
+  border-radius: .15rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.input {
+  padding: .55rem .75rem;
+  outline: none;
+  border: 1px solid #191919;
+  border-radius: .15rem;
+}
+
+.colors {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.color-light {
+  color: #fff;
+}
+
+.color {
+  width: calc(100% / 6);
+  min-height: 150px;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.percent-value {
+  margin-bottom: 1.25rem;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.error-box {
+  padding: 1.25rem 1.75rem;
+  color: rgb(228, 80, 80);
+  background-color: rgb(236, 234, 234);
+  border-radius: .55rem;
+  margin: .55rem 0;
+  width: max-content;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.copied {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  padding: .4rem;
+  background-color: rgb(211, 223, 195);
+  border-radius: .55rem;
+  color: rgb(99, 99, 192);
+}
+
+.message {
+  margin-top: 1.65rem;
+}
