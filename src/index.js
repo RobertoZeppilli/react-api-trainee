@@ -1,12 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './grocery-bud/App';
+import App from './sidebar/App';
 import reportWebVitals from './reportWebVitals';
+
+import { AppProvider } from '../src/sidebar/context';
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AppProvider>
+      <App />
+    </AppProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

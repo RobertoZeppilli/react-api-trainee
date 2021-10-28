@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './App.css';
 
-import getLocalStorage from './getLocalStorage';
+import getLocalStorage from './utilities/getLocalStorage';
 
 import Header from './components/Header'
 import Form from './components/Form'
@@ -17,7 +17,7 @@ const App = () => {
     const showAlert = (active = false, type = '', message = '') => {
         setAlert({ active, type, message })
         setTimeout(() => {
-            setAlert({ active: false, type, message })
+            setAlert({ active: false, type: '', message: '' })
         }, 1000)
     }
 
@@ -68,7 +68,7 @@ const App = () => {
     return (
         <div className="App">
             <div className="container">
-                <Header {...alert}/>
+                <Header {...alert} />
                 <Form task={task} addTask={addTask} setTask={setTask} isEditing={isEditing} />
                 <List clearList={clearList} list={list} editTask={editTask} removeTask={removeTask} />
             </div>
