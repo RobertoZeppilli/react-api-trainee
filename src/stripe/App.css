@@ -9,6 +9,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.logo {
+  cursor: pointer;
+}
 
 .toggle,
 .sidebar,
@@ -35,11 +38,18 @@ body {
   font-weight: bold;
   text-transform: capitalize;
   outline: none;
-  border: none;
+  border: 1px solid transparent;
   border-radius: .35rem;
   cursor: pointer;
   background-color: #191919;
   color: #fff;
+  transition: all .3s ease-in-out;
+}
+
+.btn:hover {
+  background: transparent;
+  border: 1px solid #191919;
+  color: #191919;
 }
 
 .link {
@@ -47,6 +57,10 @@ body {
   text-transform: capitalize;
   cursor: pointer;
   color: #fff;
+  transition: all .3s ease-in-out;
+}
+.link:hover {
+  color: #191919;
 }
 
 .hero {
@@ -152,6 +166,10 @@ body {
     font-size: 1.85rem;
     color: #191919;
     cursor: pointer;
+    transition: all .3s ease-in-out;
+  }
+  .toggle:hover {
+    color: #fff;
   }
   .hero {
     flex-direction: column;
@@ -169,16 +187,18 @@ body {
   }
  
   .sidebar {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: absolute;
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
-    height: 100%;
+    height: 900px;
     width: 100%;
     background-color: white;
-    padding: 1.25rem;
+    padding: 2.55rem 1.25rem;
     color: #191919;
     clip-path: circle(0);
     animation: makeSidebarVisible .5s ease-in-out forwards;
@@ -224,5 +244,11 @@ body {
     font-size: 1.85rem;
     color: rgb(197, 5, 5);
     cursor: pointer;
+  }
+
+  .copyrights {
+    text-align: center;
+    color: rgb(209, 209, 209);
+    font-weight: bold;
   }
 }
