@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body {
+  background-image: url('./images//hero.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.toggle,
+.sidebar,
+.sidebar-btn {
+  display: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.75rem;
+}
+.header {
+  padding: 1.15rem 0;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.15rem;
+}
+.btn {
+  padding: 1.05rem 1.25rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  border-radius: .35rem;
+  cursor: pointer;
+  background-color: #191919;
+  color: #fff;
+}
+
+.link {
+  font-weight: bold;
+  text-transform: capitalize;
+  cursor: pointer;
+  color: #fff;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.hero-text {
+  width: 40%;
+  align-self: flex-end;
+}
+.hero-image-container {
+  width: 40%;
+  text-align: center;
+}
+.hero-title {
+  font-size: 3.85rem;
+  font-weight: bolder;
+}
+.hero-description {
+  font-size: 1.25rem;
+  margin: 1.65rem 0;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  width: 200px;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.products-link,
+.developers-link,
+.company-link {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.products-box,
+.developers-box,
+.company-box {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  background-color: #fff;
+  border-radius: .55rem;
+  border: 3px solid #191919;
+  overflow: hidden;
+  opacity: 0;
+  animation: makeVisible .5s ease-in-out forwards;
+  backface-visibility: hidden;
+}
+
+@keyframes makeVisible {
+  100% {top: 50px; opacity: 1; transform: rotateX(360deg)};
+}
+
+.link-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.15rem;
+  width: 100%;
+  transition: all .3s ease-in-out;
+}
+
+.link-box:hover {
+  background-color: lightgrey;
+}
+
+.link-box a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #191919;
+}
+
+@media screen and (max-width: 798px) {
+  .products-link,
+  .developers-link,
+  .company-link,
+  .sign-in-btn {
+    display: none;
+  }
+
+  .toggle {
+    display: block;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 1.85rem;
+    color: #191919;
+    cursor: pointer;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.55rem;
+  }
+  .hero-text,
+  .hero-image-container {
+    width: 100%;
+  }
+ 
+  .sidebar {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    padding: 1.25rem;
+    color: #191919;
+    clip-path: circle(0);
+    animation: makeSidebarVisible .5s ease-in-out forwards;
+  }
+
+  @keyframes makeSidebarVisible {
+      100% {clip-path: circle(100%)};
+  }
+
+  .sidebar-btn {
+    display: block;
+    width: 100%;
+  }
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sidebar-links {
+    margin: 1.25rem 0;
+  }
+  .sidebar-link {
+    padding: 1.35rem .85rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .3s ease-in-out;
+  }
+  .sidebar-link a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #191919;
+    text-transform: capitalize;
+  }
+  .sidebar-link:hover {
+    background-color: lightgrey;
+  }
+  
+  .close-btn {
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 1.85rem;
+    color: rgb(197, 5, 5);
+    cursor: pointer;
+  }
+}

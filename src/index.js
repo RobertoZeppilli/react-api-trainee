@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './sidebar/App';
+import App from './stripe/App';
 import reportWebVitals from './reportWebVitals';
 
-import { AppProvider } from '../src/sidebar/context';
+import { AppProvider } from '../src/stripe/context';
 
 // ReactDOM.render(
 //   <React.StrictMode>
