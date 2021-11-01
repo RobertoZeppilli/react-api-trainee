@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.logo {
+  cursor: pointer;
+  text-decoration: none;
+  color: #8b8686;
+}
+.search-text {
+  color: #8b8686;
+}
+.navbar-center {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  /* padding: 1.75rem 0; */
+}
+.navbar {
+  background-color: rgb(196, 229, 190);
+}
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+.item {
+  cursor: pointer;
+  margin-left: 1.95rem;
+}
+.link {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color .3s ease-in-out;
+}
+.link:hover {
+  color:rgb(41, 71, 41);
+}
+.about,
+.error {
+  height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pages-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 2.25rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-text {
+  width: 40%;
+  padding: 1.25rem 1.85rem;
+  box-shadow: 3px 2px 8px 3px rgba(0,0,0,0.6);
+  border-radius: .65rem;
+}
+.about-text h1 {
+  margin-bottom: .85rem;
+}
+.about-text p {
+  line-height: 1.55rem;
+}
+
+.searchbar {
+  padding: 1.75rem 1.85rem;
+  width: 60%;
+  box-shadow: 3px 2px 8px 3px rgba(0,0,0,0.6);
+  border-radius: .35rem;
+}
+.input {
+  width: 100%;
+  outline: none;
+  padding: .65rem .85rem;
+  margin-top: 1.25rem;
+  font-size: 1.45rem;
+  border-radius: .35rem;
+  color: #8b8686;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  padding: .85rem 1.75rem;
+  display: block;
+  text-decoration: none;
+}
+.error-btn {
+  background-color: rgb(75, 141, 75);
+  border: 1px solid transparent;
+  color: #fff;
+  font-weight: bold;
+  transition: all .4s ease-in-out;
+  text-align: center;
+}
+.error-btn:hover {
+  background-color: transparent;
+  border: 1px solid rgb(75, 141, 75);
+  color:rgb(75, 141, 75);
+}
+.error-text {
+  height: 100%;
+  padding: 1.65rem 1.85rem;
+  box-shadow: 3px 2px 8px 3px rgba(0,0,0,0.6);
+  border-radius: .65rem;
+}
+.error-text h1 {
+  margin-bottom: 1.55rem;
+}
+
+.and {
+  color:rgb(41, 71, 41);
+}

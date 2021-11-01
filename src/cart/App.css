@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar {
+  padding: 1.65rem;
+  background-color: rgb(100, 100, 224);
+}
+.navbar-container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .title {
+  font-weight: bold;
+  color: #fff;
+}
+.navbar .cart-icon-container {
+  position: relative;
+  color: #fff;
+}
+.cart-icon {
+  font-size: 2.25rem;
+}
+.count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  height: 10px;
+  width: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: .55rem;
+  font-weight: bold;
+  font-size: .75rem;
+  color: #fff;
+  background-color:red;
+}
+.price-e-remove {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart-container {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3.65rem 1.25rem;
+}
+.cart {
+  margin-top: 1.25rem;
+  width: 100%;
+}
+.total-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.55rem;
+}
+.total-container h5{
+  margin: 0 1.75rem;
+}
+.clear-container {
+  width: 100%;
+  display: flex;
+}
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+  border-radius: 0 0 .55rem .55rem;
+  border: 1px solid #191919;
+}
+.cart-title {
+  font-size: 2.75rem;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.55rem 1.65rem;
+  border: 1px solid #191919;
+  color: #191919;
+  width: 100%;
+}
+.item-price,
+.item-title,
+.remove {
+  font-weight: bold;
+  color: rgb(160, 175, 156);
+}
+.item-title {
+  text-align: left;
+}
+
+.item-amount-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-info {
+  text-align: center;
+}
+.item-img {
+  width: 100px;
+}
+.item-title {
+  margin: 1.55rem 0;
+}
+.item-amount {
+  margin: 1.25rem 0;
+}
+
+.icon {
+  cursor: pointer;
+}
+.remove {
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+.remove:hover {
+  color: rgb(209, 85, 85);
+}
+.clear-container {
+  width: 100%;
+  text-align: center;
+}
+.clear {
+  border: 2px solid red;
+  outline: none;
+  background: none;
+  color: red;
+  padding: .75rem 1.75rem;
+  cursor: pointer;
+}

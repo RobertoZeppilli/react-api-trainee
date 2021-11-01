@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './stripe/App';
+import App from './cocktails/App';
 import reportWebVitals from './reportWebVitals';
 
-import { AppProvider } from '../src/stripe/context';
+import { AppProvider } from '../src/cocktails/context';
 
 // ReactDOM.render(
 //   <React.StrictMode>
